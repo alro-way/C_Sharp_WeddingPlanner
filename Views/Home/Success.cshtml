@@ -1,0 +1,19 @@
+
+@{
+    if(ViewBag.SessionUserId != null)
+    {
+        <div class="text-center">
+            <a href="/logout">Logout</a>
+            <h1 class="display-4">Success</h1>
+            <h1 class="display-4">User with SissionId @ViewBag.SessionId</h1>
+        </div>
+    }
+    else
+    {
+       <div class="text-center">
+            <h1 class="display-4">Uuuppsss</h1>
+            <p class="display-4">It seems you did not log in!</p>
+            <p>Go to registration/login page <a href="/">here</a></p>
+        </div> 
+    }
+}
