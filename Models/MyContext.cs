@@ -8,5 +8,7 @@ namespace C_Sharp_WeddingPlanner.Models
         public MyContext(DbContextOptions options) : base(options) { }
         public DbSet<User> Users {get;set;}
         public DbSet<Login> Logins {get;set;}
+        public DbSet<Wedding> Weddings {get;set;}
+        public DbSet<Association> Associations {get;set;}
     }
 }

@@ -1,0 +1,50 @@
+@using C_Sharp_WeddingPlanner.Models
+@model List<Wedding>
+
+<div class="container">
+    <h5><a href = "/logout">Log Out</a></h5>
+    <h4>Welcome to the Wedding Planner!</h4>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guests</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="myTable" style="overflow-y:auto;">
+            @foreach(var wedding in Model)
+            {
+            <tr>
+                <th><a href="/details/@wedding.WeddingId">@wedding.NameOne & @wedding.NameTwo</a></th>
+                <th>@wedding.Date</th>
+                <th>@wedding.WeddingGuests.Count</th>
+                <th>
+                    @{
+                        if(ViewBag.UserId == wedding.UserId)
+                        {
+                            <a href = "/delete/@wedding.WeddingId">Delete</a>
+                        }
+                        else if(wedding.WeddingGuests.Any(w=> w.UserId == ViewBag.UserId))
+                        {
+                            <a asp-action="UnRSVP" asp-controller="Home" asp-route-weddingId="@wedding.WeddingId">Un-RSVP</a>
+                        }
+                        
+                        else
+                        {
+                            <form action="rsvp/@wedding.WeddingId" method="post">
+                            <button>RSVP</button>
+                            </form>
+                        }
+                        
+                    }
+                </th>
+            </tr>
+            }
+
+
+        </tbody>
+    </table>
+    <h5><a href = "/wedding/new">New Wedding</a></h5>
+</div>

@@ -2961,6 +2961,11 @@
   "RootNamespace": "C_Sharp_WeddingPlanner",
   "Documents": [
     {
+      "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\Home\\Details.cshtml",
+      "TargetPath": "Views\\Home\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -2971,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\Home\\CreateWedPage.cshtml",
+      "TargetPath": "Views\\Home\\CreateWedPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -2978,6 +2988,11 @@
     {
       "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\ALEX_and_SASHA\\07 Training\\Coding Dojo\\c#_stack\\C_Sharp_Assignments\\C_Sharp_WeddingPlanner\\Views\\Home\\Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {

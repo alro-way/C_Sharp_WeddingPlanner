@@ -3,14 +3,16 @@ using System;
 using C_Sharp_WeddingPlanner.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace C_Sharp_WeddingPlanner.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20200219000446_Migr8")]
+    partial class Migr8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -94,11 +96,7 @@ namespace C_Sharp_WeddingPlanner.Migrations
 
                     b.Property<DateTime>("UpdatedAt");
 
-                    b.Property<int>("UserId");
-
                     b.HasKey("WeddingId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Weddings");
                 });
@@ -106,21 +104,13 @@ namespace C_Sharp_WeddingPlanner.Migrations
             modelBuilder.Entity("C_Sharp_WeddingPlanner.Models.Association", b =>
                 {
                     b.HasOne("C_Sharp_WeddingPlanner.Models.User", "ToBeGuest")
-                        .WithMany("WeddingJoined")
+                        .WithMany("WeddingToGo")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("C_Sharp_WeddingPlanner.Models.Wedding", "ToJoinWedding")
-                        .WithMany("WeddingGuests")
+                        .WithMany("Guests")
                         .HasForeignKey("WeddingId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("C_Sharp_WeddingPlanner.Models.Wedding", b =>
-                {
-                    b.HasOne("C_Sharp_WeddingPlanner.Models.User", "Creator")
-                        .WithMany()
-                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

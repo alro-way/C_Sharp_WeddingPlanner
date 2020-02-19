@@ -29,3 +29,6 @@ D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_W
 D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\C_Sharp_WeddingPlanner.pdb
 D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\C_Sharp_WeddingPlanner.csproj.CopyComplete
 D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\Razor\Views\Home\Success.g.cshtml.cs
+D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateWedPage.g.cshtml.cs
+D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.g.cshtml.cs
+D:\ALEX_and_SASHA\07 Training\Coding Dojo\c#_stack\C_Sharp_Assignments\C_Sharp_WeddingPlanner\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs

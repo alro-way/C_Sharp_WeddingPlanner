@@ -1,0 +1,23 @@
+@using C_Sharp_WeddingPlanner.Models;
+@model Wedding
+<div class="container">
+    <h3>@Model.NameOne and @Model.NameTwo Wedding</h3>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-4 col-md-offset-1">
+        <h5>Date: @Model.Date</h5>
+        <h5>Guests:</h5>
+        @foreach(var assoc in @Model.WeddingGuests)
+        {
+            <p>@assoc.ToBeGuest.FirstName @assoc.ToBeGuest.LastName</p>
+        }
+        
+
+    </div>
+
+    <div class="col-md-4 col-md-offset-1">
+        <a href="/dashboard">Dashboard</a> |
+        <a href="/logout">Log Out</a>
+    </div>
+</div>
